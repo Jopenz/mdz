@@ -1,0 +1,33 @@
+body {
+  margin: 0; }
+  body .header .container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
+    body .header .container .navbar {
+      background-color: #fff;
+      height: 70px;
+      width: 100%;
+      z-index: 9999;
+      position: fixed;
+      top: 0;
+      /* Position the navbar at the top of the page */
+      overflow: hidden; }
+    body .header .container .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      pointer-events: none;
+      top: -50px; }
+    body .header .container .video-container #overlay::before {
+      background-color: #4c4c4d;
+      opacity: 0.6;
+      float: left;
+      position: relative;
+      z-index: 1000; }
+  body .content .box {
+    height: 300px; }
+
+/*# sourceMappingURL=index.css.map */

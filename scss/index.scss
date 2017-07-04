@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+  .header{
+    .container{
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      .navbar{
+        //background-color: #fff;
+        height: 70px;
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        top: 0; /* Position the navbar at the top of the page */
+        overflow: hidden;
+      }
+      .video-container{
+        height: 100%;
+        position: inherit;
+        .text{
+          color: #fff;
+          font-size: 40px;
+          z-index: 99999;
+          position: relative;
+          height:100%;
+          text-align: center;
+          h2{
+            top: 50%;
+            position: relative;
+            transform: translateY(-50%);
+            margin: 0;
+          }
+          h3{
+            top: 50%;
+            position: relative;
+            transform: translateY(-50%);
+            margin: 0;
+          }
+        }
+        iframe{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 115%;
+          pointer-events: none;
+          top:-50px;
+        }
+        #overlay{
+          width: 100%;
+          height: 100%;
+          background-color: #000000;
+          opacity: 0.6;
+          float: left;
+          position: absolute;
+          z-index: 1000;
+        }
+      }
+          }
+
+  }
+  .content{
+    .box{
+      height: 300px;
+    }
+  }
+}
